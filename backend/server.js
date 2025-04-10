@@ -94,3 +94,8 @@ app.delete("/api/items/:id", (req, res) => {
         }
     );
 });
+
+// Start server
+app.listen(port, () => {
+    console.log(`SERVER running on http://localhost:${port}`);
+});
